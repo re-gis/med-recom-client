@@ -39,7 +39,6 @@ const MedicineRecommendation: React.FC = () => {
       });
 
       const newMedicines = response.data.medicines.medicines;
-      const totalMedicines = response.data.medicines.total;
 
       const chunks = [];
       for (let i = 0; i < newMedicines.length; i += limit) {
